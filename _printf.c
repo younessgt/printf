@@ -11,6 +11,8 @@ int _printf(const char *format, ...)
 	va_list args;
 
 	va_start(args, format);
+	if (format == NULL)
+		return (-1);
 	while (format != NULL && format[i] != '\0')
 	{
 		while (format[i] != '\0' && format[i] != '%')
@@ -27,6 +29,11 @@ int _printf(const char *format, ...)
 			while (format[i + 1] != 'c' && format[i + 1] != 'd' && format[i + 1] != 'i'
 					&& format[i + 1] != 's' && format[i + 1] != '\0' && format[i + 1] != '%')
 			{
+				while (format[i + 1] >= '0' && format[i + 1] <= '9')
+				{
+					i++;
+				}
+				_putchar(format[i + 1]);
 				i++;
 			}
 			if (format[i + 1] == 'c')
