@@ -26,7 +26,7 @@ int _printf(const char *format, ...)
 				_putchar('%');
 				i++;
 			}
-			else if (format[j] == '\0' || (format[j] == ' ' && format[j + 1] == '\0'))
+			else if (format[j] == '\0')
 				continue;
 			else
 			{
