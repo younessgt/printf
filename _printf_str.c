@@ -7,7 +7,8 @@
 void _printf_str(char *b)
 {
 	int i;
-
+	if (b == NULL)
+		b = "(null)";
 	if (b != NULL)
 	{
 		for (i = 0; b[i] != '\0'; i++)

@@ -23,7 +23,7 @@ int _printf(const char *format, ...)
 		}
 		if (format[i] == '\0')
 			break;
-		if (format[i] == '%')
+		if (format[i] != '\0' && format[i] == '%')
 		{
 			h = h + 1;
 			while (format[i + 1] != 'c' && format[i + 1] != 'd' && format[i + 1] != 'i'
