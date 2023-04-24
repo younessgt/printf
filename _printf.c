@@ -38,7 +38,7 @@ int _printf(const char *format, ...)
 			_putchar(format[j]);
 			i++;
 		}
-		if (format[j] != '/0')
+		if (format[j] != '\0')
 			format++;
 	}
 	va_end(args);
