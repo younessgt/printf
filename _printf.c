@@ -28,8 +28,9 @@ int _printf(const char *format, ...)
 			}
 			else
 			{
+				_putchar('%');
 				_putchar(format[j]);
-				i++;
+				i += 2;
 			}
 		}
 		else
