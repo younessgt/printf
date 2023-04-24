@@ -26,8 +26,6 @@ int _printf(const char *format, ...)
 				_putchar('%');
 				i++;
 			}
-			else if (format[j] == '\0')
-				continue;
 			else
 			{
 				_putchar('%');
@@ -40,7 +38,8 @@ int _printf(const char *format, ...)
 			_putchar(format[j]);
 			i++;
 		}
-		format++;
+		if (format[j] != '/0')
+			format++;
 	}
 	va_end(args);
 	return (i);
