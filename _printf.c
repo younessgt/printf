@@ -28,11 +28,6 @@ int _printf(const char *format, ...)
 				_putchar('%');
 				i++;
 			}
-			else if (format[j] == '\0')
-			{
-				putchar('%');
-				i++;
-			}
 			else
 			{
 				_putchar('%');
