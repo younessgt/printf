@@ -24,5 +24,10 @@ int _printf_bin(unsigned int a)
 			j++;
 		}
 	}
+	else if (a == 0)
+	{
+		_putchar('0');
+		j++;
+	}
 	return (j);
 }
