@@ -2,6 +2,7 @@
 /**
  * _printf_check - function that check the cases
  * @args:  pointer to the list of arguments
+ * @format: pointer to character
  * Return: number of string elements
  */
 int checker(va_list args, const char *format)
