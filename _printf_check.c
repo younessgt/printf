@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _printf_check - function that check the cases
+ * checker - function that check the cases
  * @args:  pointer to the list of arguments
  * @format: pointer to character
  * Return: number of string elements
