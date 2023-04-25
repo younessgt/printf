@@ -1,10 +1,14 @@
 #include "main.h"
 /**
  * _printf_char - function that print character
- * @a: character to pass
- * Return: nothing
+ * @args: character to pass
+ * Return: 1 (success) one character is printed
  */
-void _printf_char(int a)
+int _printf_char(va_list args)
 {
+	char a;
+
+	a = va_arg(args, int);
 	_putchar(a);
+	return (1);
 }
