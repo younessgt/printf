@@ -28,6 +28,8 @@ int _printf(const char *format, ...)
 				_putchar('%');
 				i++;
 			}
+			else if (format[j] == 'd' || format[j] == 'i')
+				i += _printf_num(va_arg(args, int));
 			else
 			{
 				_putchar('%');

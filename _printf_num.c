@@ -4,9 +4,10 @@
  * @a: integer to print
  * Return: i (number of numbers)
  */
-int _printf_num(int a) 
+int _printf_num(int a)
 {
-	int j = 0;
+	int j = 0, i = 0;
+	char Arr[20];
 
 	if (a == 0)
 	{
@@ -26,9 +27,6 @@ int _printf_num(int a)
 		a = -a;
 		j++;
 	}
-	char Arr[20];
-	int i = 0;
-
 	while (a > 0)
 	{
 		Arr[i++] = (a % 10) + '0';
