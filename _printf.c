@@ -30,6 +30,8 @@ int _printf(const char *format, ...)
 			}
 			else if (format[j] == 'd' || format[j] == 'i')
 				i += _printf_num(va_arg(args, int));
+			else if (format[j] == 'b')
+				i += _printf_bin(va_arg(args, unsigned int));
 			else
 			{
 				_putchar('%');
