@@ -25,6 +25,9 @@ int _printf_bin(unsigned int a)
 		}
 	}
 	if (a == 0)
+	{
 		_putchar('0');
+		j++;
+	}
 	return (j);
 }
