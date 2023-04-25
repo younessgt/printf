@@ -24,7 +24,7 @@ int _printf_bin(unsigned int a)
 			j++;
 		}
 	}
-	if (a == 0)
+	else if (a == 0)
 	{
 		_putchar('0');
 		j++;
