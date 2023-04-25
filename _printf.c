@@ -19,25 +19,7 @@ int _printf(const char *format, ...)
 		if (format[j] == '%')
 		{
 			format++;
-			if (format[j] == 'c')
-				i += _printf_char(args);
-			else if (format[j] == 's')
-				i += _printf_str(args);
-			else if (format[j] == '%')
-			{
-				_putchar('%');
-				i++;
-			}
-			else if (format[j] == 'd' || format[j] == 'i')
-				i += _printf_num(va_arg(args, int));
-			else if (format[j] == 'b')
-				i += _printf_bin(va_arg(args, unsigned int));
-			else
-			{
-				_putchar('%');
-				_putchar(format[j]);
-				i += 2;
-			}
+			i += checker(args, format);
 		}
 		else
 		{
