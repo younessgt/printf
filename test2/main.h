@@ -9,4 +9,5 @@ int _printf_char(va_list args);
 int _printf_str(va_list args);
 int _printf_num(int a);
 int _printf(const char *format, ...);
+int _printf_bin(unsigned int a);
 #endif
